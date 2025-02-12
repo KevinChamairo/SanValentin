@@ -1,0 +1,144 @@
+/* 💕 Asegurar que el fondo y la estructura estén bien organizados */
+.total {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espacio entre el título y el contenedor */
+  background: url('/assets/fondo_san_valentin.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* 💖 Título grande para San Valentín */
+.valentine-title {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 20px; /* Espacio arriba */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-family: 'Parisienne', cursive
+}
+
+/* 🌷 Asegurar que el "body" no interfiera */
+body, html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌷 Contenedor centrado */
+.container {
+  text-align: center;
+  background: #fff; /* Puedes cambiar el fondo del contenedor */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 350px;
+}
+
+/* 🎁 Contenedor principal */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 350px;
+}
+
+/* 💗 Caja donde se muestra la contraseña */
+.password-box {
+  font-size: 2rem;
+  letter-spacing: 6px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #ff5f6d;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  background: #fff0f6;
+  border-radius: 10px;
+}
+
+/* 🎠 Botones numéricos */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* 🎨 Estilos de botones */
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  background: #ffe0e9;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffccd5;
+}
+
+/* ✅ Botón de validación */
+.validate-btn {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.validate-btn:hover {
+  background-color: #e63950;
+}
+
+/* 🗑️ Botón de borrar */
+.delete-btn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #c9184a;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #a4133c;
+}
+
+/* 📌 RESPONSIVIDAD: Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .password-box {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

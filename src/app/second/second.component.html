@@ -1,0 +1,19 @@
+<div class="total">
+  <div class="valentine-container">
+    <h1 class="title">Señorita Esteffani Sanchez 💖</h1>
+    <p class="question">¿Aceptarías ser mi San Valentín este viernes 14 de febrero a las 5 pm? ✨</p>
+
+    <div class="buttons">
+      <button class="yes-btn" (click)="accept()">💘 ¡Sí, acepto! 💘</button>
+      <button class="no-btn" (click)="reject()">💔 No... 💔</button>
+    </div>
+
+    <p class="message">
+      {{ rejectionMessage }}
+      <!-- Muestra la imagen solo si hay una en la variable memeImage -->
+      <img *ngIf="memeImage" [src]="memeImage" alt="Meme divertido" class="meme-img">
+    </p>
+  </div>
+</div>
+
+

@@ -1,0 +1,181 @@
+/* 💕 Asegurar que el fondo y la estructura estén bien organizados */
+.total {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espacio entre el título y el contenedor */
+  background: url('/assets/fondo_san_valentin_4.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+/* 💖 Fondo de página */
+body {
+  background-image: url('https://www.example.com/fondo-valentin.jpg'); /* Imagen de fondo romántica */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* 💕 Contenedor principal */
+.valentine-container {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7); /* Rosa pastel semi-transparente */
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 20px rgba(255, 182, 193, 0.5);
+  max-width: 90%;
+  width: 450px;
+  margin: auto;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 💖 Título animado */
+.title {
+  font-size: 3rem;
+  color: #ff3366; /* Fucsia suave */
+  margin-bottom: 20px;
+  position: relative;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* 💘 Efecto de rebote en el título */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-10px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* 🌹 Decoración en el texto de la pregunta */
+.question {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ffffff, #ffffff); /* Rosa degradado */
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* 💘 Animación de brillo para el texto */
+@keyframes textGlow {
+  0% { text-shadow: 0 0 10px #ffffff, 0 0 20px #f9e666; }
+  100% { text-shadow: 0 0 20px #ffffff, 0 0 30px #f9e666; }
+}
+
+/* 💕 Botones con animaciones */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  position: relative;
+}
+
+/* Botón base */
+button {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+/* 💖 Botón "Sí" */
+.yes-btn {
+  background-color: #ff6699; /* Rosa medio */
+  color: white;
+}
+
+.yes-btn:hover {
+  background-color: #ff3366; /* Fucsia más intenso */
+  transform: scale(1.1);
+  box-shadow: 0px 8px 25px rgba(255, 182, 193, 0.5);
+}
+
+/* 💔 Botón "No" */
+.no-btn {
+  background-color: #ff99aa; /* Rosa pastel más clarito */
+  color: white;
+}
+
+.no-btn:hover {
+  background-color: #ff6680; /* Rosa un poco más intenso */
+  transform: scale(1.1);
+  box-shadow: 0px 8px 25px rgba(255, 182, 193, 0.5);
+}
+
+/* 💔 Mensaje de rechazo */
+.message {
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 20px;
+  min-height: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🎀 Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 💘 Animación de fondo suave */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Efecto de aparición para los botones */
+.buttons button {
+  animation: fadeInButtons 2s ease-in-out forwards;
+}
+
+@keyframes fadeInButtons {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🖼️ Estilo para la imagen del meme */
+.meme-img {
+  display: block;
+  margin: 10px auto;
+  width: 150px; /* Ajusta el tamaño según prefieras */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}

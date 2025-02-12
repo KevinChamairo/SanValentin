@@ -1,0 +1,76 @@
+.total {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url('/assets/fondo_san_valentin_3.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.final-message {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: white;
+  background: rgba(255, 182, 193, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 90%;
+  width: 600px;
+  animation: fadeIn 2s ease-in-out, heartbeat 2s infinite alternate;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 💖 Frase especial */
+.special-phrase {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff8dc;
+  margin-top: 20px;
+  animation: glow 2s infinite alternate;
+}
+
+/* ✨ Animación de resplandor */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+  100% { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+
+/* 💓 Animación de latido */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* 📸 Imágenes decorativas */
+.decorative-img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+  animation: float 3s infinite alternate ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 💕 Ajuste de imágenes para mejor distribución */
+.img1 { top: 35%; left: 20%; transform: rotate(-10deg); }
+.img2 { top: 35%; right:20%; transform: rotate(10deg); }
+.img3 { bottom: 5%; left: 35%; transform: rotate(-8deg); }
+.img4 { bottom: 5%; right: 35%; transform: rotate(8deg); }
+
+/* 🏮 Efecto flotante */
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
+/* 🫧 Animación sutil al pasar el cursor sobre las imágenes */
+.decorative-img:hover {
+  transform: scale(1.1) rotate(0deg);
+}

@@ -1,0 +1,25 @@
+<div class="total">
+  <!-- ❤️ Título grande para San Valentín -->
+  <h1 class="valentine-title">¡San Valentín, 14 de febrero del 2025! </h1>
+
+  <div class="container">
+    <h2>Ingrese código de 6 dígitos por favor, señorita Esteffani Deyanira Sanchez Martinez✨🫶🏻.</h2>
+
+    <!-- Área donde se muestra la contraseña en tiempo real -->
+    <div class="password-box">
+      <span>{{ formattedPassword() }}</span>
+    </div>
+
+    <!-- Botones numéricos -->
+    <div class="buttons">
+      <button *ngFor="let num of numbers" (click)="addDigit(num)">{{ num }}</button>
+    </div>
+
+    <!-- Botón para borrar números -->
+    <button class="delete-btn" (click)="clearPassword()">🗑️ Borrar</button>
+
+    <!-- Botón para validar la contraseña -->
+    <button class="validate-btn" (click)="validatePassword()">✅ Ingresar Contraseña</button>
+  </div>
+</div>
+
